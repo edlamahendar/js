@@ -14,7 +14,7 @@ $(function() {
       sbirthDay:"required",
       ParentName:"required",
       rules: {
-        phoneNumber: {
+        PhoneNumber:{
             required: true,
             minlength:10,
             maxlength:10
