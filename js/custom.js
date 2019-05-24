@@ -15,7 +15,6 @@ $(function() {
       ParentName:"required",
       PhoneNumber:{
         required: true,
-        matches:"[0-9]+",
         minlength:10,
         maxlength:10
 
