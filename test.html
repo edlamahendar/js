@@ -107,10 +107,16 @@
   </div>
     </div>
   
+<div class="row">
+<div class="addmore_education" id="addmore_education">
 
+
+</div>
+
+</div>
 </form>
  <div class="row">
-  <div class="col"><button type="submit" class="btn btn-primary">Submit</button></div>
+  <div class="col"><button type="submit" id="submitbtn" class="btn btn-primary">Submit</button></div>
 <div class="col">
   <a class="button-remove pull-right"><span class="fa fa-plus block-remove btn-block-remove" id="block-remove" data-toggle="tooltip" data-placement="top" title="Delete"></span></a>
 </div>
@@ -135,7 +141,13 @@
      endDate: '+1d',
 datesDisabled: '+1d',
     });
+    $("#submitbtn").click(function(){
 
+      $(".user-details").append(' <div class="user_data"><div class="form-group"><label class="control-label">Student Name</label><input name="name" class="form-control"  autocomplete="false" type="text"></div><div class="form-group"><label class="control-label">Permanent Address</label><input name="address" class="form-control" autocomplete="false" type="text"></div><div class="form-group"><label class="control-label">Phone No.</label><input name="phone" class="form-control" autocomplete="false" type="text"></div><button class="remove-btn" data-toggle="tooltip" data-placement="top" title="Delete"><i class="fa fa-trash-o" aria-hidden="true"></i>X</button></div>');
+      $(".addmore_education").on("click",".btn-block-remove",function(e){
+       $(this).parents('.user_data').remove();
+  });
+    });
 </script>
   </body>
 </html>
