@@ -13,13 +13,11 @@ $(function() {
       wantToapply:"required",
       sbirthDay:"required",
       ParentName:"required",
-      rules: {
         PhoneNumber:{
             required: true,
             minlength:10,
             maxlength:10
-        }
-    },
+                  },
       Adddress:"required",
       Email: {
         required: true,
