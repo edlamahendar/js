@@ -25,7 +25,7 @@ $(function() {
         required: true,
         // Specify that email should be validated
         // by the built-in "email" rule
-        Email: true
+       
       }
 	  
       
