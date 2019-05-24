@@ -10,11 +10,15 @@ $(function() {
       // on the right side
       FirstName: "required",
       LastName: "required",
-	  wantToapply:"required",
-	  sbirthDay:"required",
-	  ParentName:"required",
-	  PhoneNumber:"required",
-	  Adddress:"required",
+      wantToapply:"required",
+      sbirthDay:"required",
+      ParentName:"required",
+      PhoneNumber:{
+        required: true,
+        phoneno:true,
+
+      },
+      Adddress:"required",
       Email: {
         required: true,
         // Specify that email should be validated
@@ -25,21 +29,22 @@ $(function() {
       
     },
     // Specify validation error messages
-    messages: {
+      messages: {
       FirstName: "Please enter your firstname",
       LastName: "Please enter your lastname",
-	  wantToapply: "Please enter Class you want to apply for",
+	    wantToapply: "Please enter Class you want to apply for",
       sbirthDay: "Please enter Student's birth Day",
-	  ParentName: "Please enter your Parent Name",
-	  PhoneNumber: "Please enter your Phone Number",
-	  Adddress: "Please enter your Adddress",
+      ParentName: "Please enter your Parent Name",
+      PhoneNumber: "Please enter your Phone Number",
+      Adddress: "Please enter your Adddress",
       Email: "Please enter a valid email address"
     },
-	
+
     // Make sure the form is submitted to the destination defined
     // in the "action" attribute of the form when valid
     submitHandler: function(form) {
       form.submit();
     }
+    
   });
 });
