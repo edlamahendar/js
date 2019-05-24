@@ -11,7 +11,9 @@ $(function() {
       FirstName: "required",
       LastName: "required",
       wantToapply:"required",
-      sbirthDay:"required",
+      sbirthDay:{
+        required: true,
+    },
       ParentName:"required",
         PhoneNumber:{
             required: true,
