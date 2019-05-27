@@ -67,17 +67,13 @@ error_reporting(0); ?>
     <label for="FirstName">First Name</label>
     <input name="FirstName[]" type="text" class="form-control" id="FirstName" aria-describedby="FirstName" placeholder="First Name">
 
-    <input name="FirstName" type="text" class="form-control" id="FirstName" aria-describedby="FirstName" placeholder="First Name">
-
   </div>
   </div>
   <div class="col-sm-3">
   <div class="form-group">
     <label for="LastName">Last Name</label>
-
     <input name="LastName[]" type="text" class="form-control" id="LastName" placeholder="Last Name">
-=======
-    <input name="LastName" type="text" class="form-control" id="LastName" placeholder="Last Name">
+
 
   </div>
   </div>
@@ -86,9 +82,6 @@ error_reporting(0); ?>
     <label for="wantToapply">Class you want to apply for</label>
 
     <select name="wantToapply[]" class="form-control" id="wantToapply">
-
-    <select name="wantToapply" class="form-control" id="wantToapply">
-
      <option value=''>Select Class</option>
       <option  value='1'>1</option>
       <option value='2'>2</option>
@@ -104,8 +97,6 @@ error_reporting(0); ?>
 
     <input name="sbirthDay[]" type="text" class="form-control" id="sbirthDay" placeholder="DD/MM/YEAR">
 
-    <input name="sbirthDay" type="text" class="form-control" id="sbirthDay" placeholder="DD/MM/YEAR">
-
   </div>
   </div>
    </div>
@@ -115,22 +106,18 @@ error_reporting(0); ?>
   <div class="form-group">
     <label for="ParentName">Parent Name</label>
     <input name="ParentName[]" type="text" class="form-control" id="ParentName" placeholder="Parent Name">
-
-    <input name="ParentName" type="text" class="form-control" id="ParentName" placeholder="Parent Name">
   </div>
   </div>
      <div class="col-sm-3">
   <div class="form-group">
     <label for="PhoneNumber">Phone Number</label>
     <input name="PhoneNumber[]" type="tel" class="form-control" id="PhoneNumber" placeholder="Phone Number">
-    <input name="PhoneNumber" type="tel" class="form-control" id="PhoneNumber" placeholder="Phone Number">
   </div>
   </div>
 <div class="col-sm-3">
   <div class="form-group">
     <label for="Adddress">Adddress</label>
     <input name="Adddress[]" type="text" class="form-control" id="Adddress" placeholder="Adddress">
-    <input name="Adddress" type="text" class="form-control" id="Adddress" placeholder="Adddress">
   </div>
   </div>
     <div class="col-sm-3">
@@ -148,13 +135,10 @@ error_reporting(0); ?>
       <div class="col">
     <div class="addbtn_col"><a id="addbtn_col" class="fa fa-plus buttonAddMore blockAddMore pull-right" data-toggle="tooltip" data-placement="top" title="" data-original-title="Add More Details"></a></div>
     </div>
-    <input name="email" type="email" class="form-control" id="email" placeholder="Email">
   </div>
   </div>
     </div>
-    <div class="row">
-      <div class="col"><button type="submit" id="submitbtn" class="btn btn-primary">Submit</button></div>
-     </div>
+   
 </form>
 
 </div>
