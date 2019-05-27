@@ -1,0 +1,137 @@
+<?php include_once('test.php'); ?>
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Edla Education Forms</title>
+        <!-- Bootstrap CSS -->
+        <link href="css/bootstrap.css" rel="stylesheet">
+         <link href="css/bootstrap-datepicker.css" rel="stylesheet">
+         <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+         <link href="css/main_style.css" rel="stylesheet">
+  </head>
+  <body>
+  <!-- start Header -->
+<div id="header">
+<nav class="navbar navbar-dark bg-primary">
+  <a class="navbar-brand" href="#">Education Forms</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarText">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Features</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Pricing</a>
+      </li>
+    </ul>
+    <span class="navbar-text">
+      Navbar text with an inline element
+    </span>
+  </div>
+</nav>
+
+</div>
+ <!-- end Header -->
+ <div class="education_col ptb-30">
+<div class="container">
+ <form name="education" id="education" action="test.php" method="POST" >
+ <div class="title_col text-center">
+ <h2>School Admission form</h2>
+ <p>School Admission Forms are processed within 48 hrs.You will receive an email confirmation when we processyour application</p>
+ </div>
+  <div class="row">
+ <div class="col-sm-3">
+  <div class="form-group">
+    <label for="FirstName">First Name</label>
+    <input name="FirstName" type="text" class="form-control" id="FirstName" aria-describedby="FirstName" placeholder="First Name">
+  </div>
+  </div>
+  <div class="col-sm-3">
+  <div class="form-group">
+    <label for="LastName">Last Name</label>
+    <input name="LastName" type="text" class="form-control" id="LastName" placeholder="Last Name">
+  </div>
+  </div>
+   <div class="col-sm-3">
+  <div class="form-group">
+    <label for="wantToapply">Class you want to apply for</label>
+    <select name="wantToapply" class="form-control" id="wantToapply">
+     <option value=''>Select Class</option>
+      <option  value='1'>1</option>
+      <option value='2'>2</option>
+      <option value='3'>3</option>
+      <option value='4'>4</option>
+      <option value='5'>5</option>
+    </select>
+  </div>
+  </div>
+  <div class="col-sm-3">
+  <div class="form-group" id="sandbox-container">
+    <label for="sbirthDay">Student's birth Day</label>
+    <input name="sbirthDay" type="text" class="form-control" id="sbirthDay" placeholder="DD/MM/YEAR">
+  </div>
+  </div>
+   </div>
+    <div class="row">
+   
+   <div class="col-sm-3">
+  <div class="form-group">
+    <label for="ParentName">Parent Name</label>
+    <input name="ParentName" type="text" class="form-control" id="ParentName" placeholder="Parent Name">
+  </div>
+  </div>
+     <div class="col-sm-3">
+  <div class="form-group">
+    <label for="PhoneNumber">Phone Number</label>
+    <input name="PhoneNumber" type="tel" class="form-control" id="PhoneNumber" placeholder="Phone Number">
+  </div>
+  </div>
+<div class="col-sm-3">
+  <div class="form-group">
+    <label for="Adddress">Adddress</label>
+    <input name="Adddress" type="text" class="form-control" id="Adddress" placeholder="Adddress">
+  </div>
+  </div>
+    <div class="col-sm-3">
+  <div class="form-group">
+    <label for="email">Email</label>
+    <input name="email" type="email" class="form-control" id="email" placeholder="Email">
+  </div>
+  </div>
+    </div>
+    <div class="row">
+      <div class="col"><button type="submit" id="submitbtn" class="btn btn-primary">Submit</button></div>
+    
+     </div>
+</form>
+
+ 
+
+ 
+</div>
+ </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="js/jquery-slim.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap-datepicker.min.js"></script>
+<script src="js/jquery.validate.min.js"></script>
+<script src="js/custom.js"></script>
+<script type="text/javascript">
+    $('#sandbox-container input').datepicker({
+		 format: 'mm/dd/yyyy',
+     endDate: '+1d',
+datesDisabled: '+1d',
+    });
+</script>
+  </body>
+</html>
