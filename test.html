@@ -107,11 +107,20 @@
   </div>
     </div>
   
+<div class="row">
+<div class="addmore_education" id="addmore_education">
+    <div id="Block"></div>
 
+
+</div>
+
+</div>
 </form>
  <div class="row">
   <div class="col"><button type="submit" id="submitbtn" class="btn btn-primary">Submit</button></div>
-
+<div class="col">
+    <div class="addbtn_col"><div class="col-md-12"><span class="fa fa-plus buttonAddMore blockAddMore pull-right" data-toggle="tooltip" data-placement="top" title="" data-original-title="Add More Details"></span></div></div>
+</div>
 
 
  </div>
@@ -134,6 +143,21 @@
      endDate: '+1d',
 datesDisabled: '+1d',
     });
+    var block_open=edu=task=str=desc=goa=assign=lang2=yr=block_close='';
+
+var block_open='<div class="BlockClone plan_of_action"><div class="row"><a class="button-remove"><span class="glyphicon glyphicon-remove block-remove btn-block-remove" id="block-remove" data-toggle="tooltip" data-placement="top" title="Delete"></span></a><div class="col-md-3 col-sm-4 col-xs-12"><div class="form-group has-error"><label class="control-label no-padding-right field-required" for="zone">Plan for Business Unit</label><select class="form-control zonal" name="zone[]" id="zone'+count+'"><option value="">--Select  Zone--</option> <?php $block_zone=''; foreach($zones as $each){   $block_zone.='<option value='.$each['id'].' >'.$each['name'].'</option>';   } echo $block_zone; ?> </select><span class="error-span">This field is required</span></div></div>';		   
+var edu='<div class="col-md-3 col-sm-4 col-xs-12"><div class="form-group"><label class="control-label no-padding-right field-required" for="cluster">Cluster</label><select class="form-control" name="cluster[]" id="cluster'+count+'"><option value="">-Select Cluster--</option></select></div></div>'		   
+var str='<div class="col-md-3 col-sm-4 col-xs-12"><div class="form-group"><label class="control-label no-padding-right field-required" for="spa"> SPA</label><select class="form-control" name="spa[]" id="spa'+count+'"><option value="">-Select Spa--</option></select></div></div>';
+var desc='<div class="col-md-3 col-sm-6 col-xs-12 action-description-view-p1"><div class="form-group"><label class="control-label no-padding-right" for="form-field-1"> Action Description</label><textarea class="form-control" name="description[]" id="description'+count+'" rows="3" cols="10"></textarea></div></div></div>';
+var goa='<div class="row"><div class="col-md-3 col-sm-4 col-xs-12"><div class="form-group"><label class="control-label no-padding-right field-required" for="work category">Goal of Action</label><select class="form-control" name="goal_action_item[]" id="goal_action_item'+count+'"><option value="">Select</option><?php $goa=''; foreach($actionGoals as $each){   $goa.='<option value='.$each['id'].' >'.$each['name'].'</option>';   } echo $goa; ?></select></div></div>';
+var assign='<div class="col-md-3 col-sm-4 col-xs-12"><div class="form-group"><label class="control-label no-padding-right field-required" for="assigned_to">Assigned to</label><select class="form-control" name="assigned_to[]" id="assigned_to'+count+'"><option values="">Select </option><?php $assign=''; foreach($activeusers as $each){   $assign.='<option value='.$each['user_id'].' >'.$each['first_name']." ".$each['last_name'].'</option>';   } echo $assign; ?></select></div></div>';
+var lang2='<div class="col-md-3 col-sm-4 col-xs-12"><div class="form-group"><label class="control-label no-padding-right field-required" for="plandate_to_complete">Plan date to complete</label><input type="text" name="plandate_to_complete[]" id="plandate_to_complete'+count+'" class="form-control optional" "="" placeholder="DD/MM/YYYY" value=""></div></div>';
+
+var block_close='</div></div>';
+
+
+var finalAppend=block_open+edu+str+desc+goa+assign+lang2+block_close;
+$('#Block').append(finalAppend);
 </script>
   </body>
 </html>
