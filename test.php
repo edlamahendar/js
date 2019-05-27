@@ -21,7 +21,7 @@ if ($conn->query($sql) === TRUE) {
    $_SESSION['message'] = 'success';
     header("Location: educationform.php");
 } else {
-    echo "Error: " . $sql . "<br>" . $conn->error;
+     echo "Error: " . $sql . "<br>" . $conn->error;
 }
 
 $sql1 = "SELECT * FROM education";
