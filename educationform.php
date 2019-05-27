@@ -42,6 +42,7 @@ error_reporting(0); ?>
 
 </div>
  <!-- end Header -->
+
  <div class="mesg">
  <?php
  if (!empty($_SESSION['message'])) {
@@ -49,6 +50,7 @@ error_reporting(0); ?>
     unset($_SESSION['message']);
 }?>
  </div>
+
  <div class="education_col ptb-30">
 <div class="container">
  <form name="education" id="education" action="test.php" method="POST" >
@@ -56,24 +58,37 @@ error_reporting(0); ?>
  <h2>School Admission form</h2>
  <p>School Admission Forms are processed within 48 hrs.You will receive an email confirmation when we processyour application</p>
  </div>
+
  <div class="user_data">
+
   <div class="row">
  <div class="col-sm-3">
   <div class="form-group">
     <label for="FirstName">First Name</label>
     <input name="FirstName[]" type="text" class="form-control" id="FirstName" aria-describedby="FirstName" placeholder="First Name">
+
+    <input name="FirstName" type="text" class="form-control" id="FirstName" aria-describedby="FirstName" placeholder="First Name">
+
   </div>
   </div>
   <div class="col-sm-3">
   <div class="form-group">
     <label for="LastName">Last Name</label>
+
     <input name="LastName[]" type="text" class="form-control" id="LastName" placeholder="Last Name">
+=======
+    <input name="LastName" type="text" class="form-control" id="LastName" placeholder="Last Name">
+
   </div>
   </div>
    <div class="col-sm-3">
   <div class="form-group">
     <label for="wantToapply">Class you want to apply for</label>
+
     <select name="wantToapply[]" class="form-control" id="wantToapply">
+
+    <select name="wantToapply" class="form-control" id="wantToapply">
+
      <option value=''>Select Class</option>
       <option  value='1'>1</option>
       <option value='2'>2</option>
@@ -86,7 +101,11 @@ error_reporting(0); ?>
   <div class="col-sm-3">
   <div class="form-group" id="sandbox-container">
     <label for="sbirthDay">Student's birth Day</label>
+
     <input name="sbirthDay[]" type="text" class="form-control" id="sbirthDay" placeholder="DD/MM/YEAR">
+
+    <input name="sbirthDay" type="text" class="form-control" id="sbirthDay" placeholder="DD/MM/YEAR">
+
   </div>
   </div>
    </div>
@@ -96,18 +115,22 @@ error_reporting(0); ?>
   <div class="form-group">
     <label for="ParentName">Parent Name</label>
     <input name="ParentName[]" type="text" class="form-control" id="ParentName" placeholder="Parent Name">
+
+    <input name="ParentName" type="text" class="form-control" id="ParentName" placeholder="Parent Name">
   </div>
   </div>
      <div class="col-sm-3">
   <div class="form-group">
     <label for="PhoneNumber">Phone Number</label>
     <input name="PhoneNumber[]" type="tel" class="form-control" id="PhoneNumber" placeholder="Phone Number">
+    <input name="PhoneNumber" type="tel" class="form-control" id="PhoneNumber" placeholder="Phone Number">
   </div>
   </div>
 <div class="col-sm-3">
   <div class="form-group">
     <label for="Adddress">Adddress</label>
     <input name="Adddress[]" type="text" class="form-control" id="Adddress" placeholder="Adddress">
+    <input name="Adddress" type="text" class="form-control" id="Adddress" placeholder="Adddress">
   </div>
   </div>
     <div class="col-sm-3">
@@ -125,7 +148,12 @@ error_reporting(0); ?>
       <div class="col">
     <div class="addbtn_col"><a id="addbtn_col" class="fa fa-plus buttonAddMore blockAddMore pull-right" data-toggle="tooltip" data-placement="top" title="" data-original-title="Add More Details"></a></div>
     </div>
-    
+    <input name="email" type="email" class="form-control" id="email" placeholder="Email">
+  </div>
+  </div>
+    </div>
+    <div class="row">
+      <div class="col"><button type="submit" id="submitbtn" class="btn btn-primary">Submit</button></div>
      </div>
 </form>
 
@@ -170,6 +198,7 @@ error_reporting(0); ?>
 }?>
 
  </table>
+ 
 </div>
  </div>
     <!-- Optional JavaScript -->
